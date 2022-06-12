@@ -10,6 +10,7 @@ function Card({ movie }: props) {
   return (
     <div className={style.card}>
       <div className={style.image_container}>
+        <p className={style.title}>{movie.title || movie.original_name}</p>
         <Image
           src={`https://image.tmdb.org/t/p/w500${
             movie.backdrop_path || movie.poster_path
