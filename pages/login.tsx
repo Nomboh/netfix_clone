@@ -42,12 +42,14 @@ function Login() {
         layout="fill"
         className={style.image_bg}
         objectFit="cover"
+        alt="netflix"
       />
 
       <img
         src="https://rb.gy/ulxxee"
         className={style.image_logo}
         width={150}
+        alt="netflix"
       />
 
       <form onSubmit={handleSubmit(onSubmit)} className={style.form}>

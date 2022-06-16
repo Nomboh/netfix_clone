@@ -56,7 +56,7 @@ const Home = ({
           </div>
         </section>
       </main>
-      {showModal && <Modal />}
+      {/* {showModal && <Modal />} */}
     </div>
   );
 };
