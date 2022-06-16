@@ -1,5 +1,10 @@
 .card {
   flex: 1;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 .image_container {
   height: 140px;

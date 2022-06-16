@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import style from "../styles/Header.module.css";
 import { FaBell, FaSearch } from "react-icons/fa";
 import Link from "next/link";
+import useAuth from "../hooks/useAuth";
 
 function Header() {
   const [isScroll, setIsScroll] = React.useState(false);
@@ -21,6 +22,10 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const { logOut } = useAuth();
+  const handleLogout = async () => {
+    await logOut();
+  };
   return (
     <header className={`${style.header} ${isScroll && style.transparent}`}>
       <div className={style.container}>
@@ -40,7 +45,12 @@ function Header() {
           <p className={style.children}>Childern</p>
           <FaBell className={style.head_icon} />
           <Link href={"/account"}>
-            <img src="https://rb.gy/g1pwyx" alt="" className={style.avatar} />
+            <img
+              src="https://rb.gy/g1pwyx"
+              alt=""
+              className={style.avatar}
+              onClick={handleLogout}
+            />
           </Link>
         </div>
       </div>

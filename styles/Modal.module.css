@@ -1,0 +1,9 @@
+.hd {
+  border: 2px solid#f5f5f5;
+  background-color: rgba(0, 0, 0, 0.677);
+  border-radius: 5px;
+  padding: 0px 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #f5f5f5;
+}

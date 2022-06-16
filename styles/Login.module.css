@@ -1,0 +1,91 @@
+.login {
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_bg {
+  z-index: -1;
+}
+
+.image_logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 100;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.form_title {
+  margin: 0;
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  padding: 15px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #333;
+}
+
+.input:focus {
+  background-color: #454545;
+}
+
+.input::placeholder {
+  color: gray;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: var(--light-gray-1);
+  cursor: pointer;
+}
+
+.signup {
+  color: var(--light-gray-4);
+}
+
+.btn_signup {
+  background-color: transparent;
+  color: var(--light-gray-1);
+  border: none;
+  border-bottom: 2px solid var(--light-gray-1);
+  cursor: pointer;
+}
+
+.validate {
+  color: orangered;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .login {
+    background-color: #141414;
+  }
+  .form {
+    padding: 20px;
+    background-color: transparent;
+  }
+}
